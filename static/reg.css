@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin:0px 
+
+}
+div.header{
+    
+    height:30px;
+    text-align:center;
+    color:white;
+    background-color:blue;
+    padding:0px;
+    font-size: 25px
+}
+#form{
+   text-align:left;
+   background-color:yellow;
+   margin-left: 20px;
+   
+   float:right;
+   height:700px;
+   width: 300px;
+   position: relative;
+   padding:30px
+   
+}
+
+#login{
+    text-align:left;
+    background-color:yellow;
+    margin-left: 20px;
+    
+    float:right;
+    height:700px;
+    width: 300px;
+    position: relative;
+    
+    padding:30px
+    
+ }
+#footer{
+    position: relative;
+    top:690px;
+    background-color: blue;
+    margin: 0px
+}
+div.buttons{
+    text-align:center
+}
+#togglePassword{
+    margin-left: -30px;
+    cursor: pointer;
+}
+body{
+    background-color: blue;
+    background-image:url("images/nitte2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:100vh
+}
+
+.login{
+    position: relative;
+    top: 50px;
+    height: fit-content;
+}
+
+.error{
+    background: #f2dede ;
+    color: #A94442 ;
+    width: 95%;
+    padding:  10px;
+    text-align: center;
+
+}
+.success{
+    background: #d4edda ;
+    color: #40754c ;
+    width: 95%;
+    padding:  10px;
+    text-align: center;
+
+}
