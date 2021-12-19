@@ -5,15 +5,16 @@
             Registration Form
         </title>
         <link rel="stylesheet" href="reg.css">
-        f
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body>
         <div class="header">
             <p>
-                WELCOME TO NMAMIT
-            </p>
+                STATIC   
+            <p>
         </div>
+      <div class="reg">  
         <div id="form">
             <h1>Register</h1>
         <form action="reg.php" name="registration" method="post">
@@ -85,6 +86,6 @@
 
           <?php } ?>
        </div>
-      
+      </div>
     </body>
 </html>

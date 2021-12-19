@@ -260,8 +260,8 @@ body{
 .online-list p{
     display:inline;
     position:relative;
-    left: 50px;
-    bottom: 35px;
+    
+
 }
 /* main container */
   /* css for posting content (main content top*/
@@ -420,7 +420,7 @@ body{
     
 }
 .settings-menu-height{
-   min-height: 450px;
+   min-height: 200px;
    display:block;
 }
 .user-profile p,small,span{
@@ -468,7 +468,7 @@ body{
 }
 
 input {
-  background-color: #4CAF50;
+  background-color: #1876f2;
   border: none;
   color: white;
   padding: 10px 22px;
@@ -476,4 +476,10 @@ input {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.button h1{
+    font-size: 40px;
+    color: #efefef;
+    font-style: italic;
 }

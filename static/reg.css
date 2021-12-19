@@ -5,12 +5,14 @@
 }
 div.header{
     
-    height:30px;
+    height:40px;
     text-align:center;
     color:white;
     background-color:blue;
     padding:0px;
-    font-size: 25px
+    font-size: 35px;
+    font-style: italic;
+    font-style: bold;
 }
 #form{
    text-align:left;
@@ -53,7 +55,7 @@ div.buttons{
 }
 body{
     background-color: blue;
-    background-image:url("images/nitte2.jpg");
+    background-image:url("images/nitte3.jpeg");
     background-repeat:no-repeat;
     background-size: cover;
     height:100vh

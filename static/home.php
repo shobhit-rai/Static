@@ -29,7 +29,7 @@
     
             }
             var settingsmenu = document.querySelector(".settings-menu")
-          /* The function to toggle the settings option(currently not working)*/
+          /* The function to toggle the settings option(working)*/
             function settingsMenuToggle()
             {
               
@@ -49,18 +49,18 @@
             <!-- left sidebar-->
                     <div class="left-sidebar">
                         <div class="imp-links">
-                            <a href="#"><img src="images/news.png">Latest news</a>
-                            <a href="#"><img src="images/friends.png">Friends</a>
-                            <a href="#"><img src="images/Group.png">Group</a>
+                            <a href="https://news.google.com/"><img src="images/news.png">Latest news</a>
+                            <!-- <a href="#"><img src="images/friends.png">Friends</a>
+                            <a href="#"><img src="images/Group.png">Group</a> -->
 
-                            <a href="#">See more</a>
+                            <!-- <a href="#">See more</a> -->
                        </div>
                        <div class="shortcut-links">
                            <p>Your Shortcuts</p>
-                           <a href='#'><img src="images/shortcut-1.png">Web developers</a>
-                           <a href='#'><img src="images/shortcut-2.png">Web design</a>
-                           <a href='#'><img src="images/shortcut-3.png">Full Stack</a>
-                           <a href='#'><img src="images/shortcut-4.png">Website Experts</a>
+                           <a href='https://www.upwork.com/hire/web-developers/'><img src="images/shortcut-1.png">Web developers</a>
+                           <a href='https://www.wix.com/'><img src="images/shortcut-2.png">Web design</a>
+                           <a href='https://www.geeksforgeeks.org/what-is-full-stack-development/'><img src="images/shortcut-3.png">Full Stack</a>
+                           
                        </div>
                     </div>
 
@@ -72,15 +72,15 @@
                                 <img src="images/profile.jpg">
                                 <div>
                                     <p><?php echo $_SESSION['user_name']; ?></p>
-                                    <small>Public <i class="fas fa-sort-down"></i></small>
+                                    <!-- <small>Public <i class="fas fa-sort-down"></i></small> -->
                                 </div>
                             </div>
-                            <form method="post">
+                            <form method="post" enctype="multipart/form-data">
                               <div class="post-input-container">
                                   <textarea name="post" col="1" rows="3" placeholder="What's on your mind, Shobhit">
                                         </textarea>
                                   <div class="add-post-links">
-                                   <a href=#>  <img src="images/photo.png"><input type=file name="Photo"></a> 
+                                   <a href=#>  <img src="images/photo.png"><input type=file name="file"></a> 
                                    <input type="submit" value="Post">
                                   <input type ="reset" >
                                   </div>
@@ -97,7 +97,7 @@
                           $posts = $post->get_post($id);
                           if($posts)
                           {
-                            echo "hello";
+                            
                             foreach($posts as $row){
                                 $row_user = $post->get_user($row['userid']);
                                 include("post1.php");
@@ -111,12 +111,12 @@
 
                     <!--Right Sidebar-->
                     <div class="right-sidebar">
-                        <div class="sidebar-title">
+                        <!-- <div class="sidebar-title">
                             <h4>Events</h4>
                             <a href='#'>See all</a>
-                        </div>
+                        </div> -->
                     <!-- Events section -->
-                        <div class="event">
+                        <!-- <div class="event">
                             <div class="left-event">
                                 <h3>27</h3>
                                <span>Novemeber</span>
@@ -139,9 +139,9 @@
                                 <p><i class="fas fa-map-marker-alt"></i>Nitte Karkala</p>
                                 <a href="#">Mode info</a>
                             </div>
-                        </div>
+                        </div> -->
                     <!-- Advertisements -->
-                        <div class="sidebar-title">
+                        <!-- <div class="sidebar-title">
                             <h4>Advertisement</h4>
                             <a href='#'>Close</a>
                         </div>
@@ -149,26 +149,20 @@
                         <div class="sidebar-title">
                             <h4>Conversation</h4>
                             <a href='#'>Hide Chats</a>
-                        </div>
+                        </div> -->
                       
                     <!-- Friends list-->    
                         <div class="online-list">
                             <div class="image">
-                                <img src="images/profile.jpg">
-                                <p>Alison&nbsp;ina</p>
+                                
+                                <h1>About&nbsp;us</h1>
+                                <p>&nbsp;Static&nbsp;is&nbsp;made&nbsp;by&nbsp;nitte&nbsp;students&nbsp;for&nbsp;nitte&nbsp;students.
+                                &nbsp;In&nbsp;static,&nbsp;you&nbsp;can&nbsp;post&nbsp;about&nbsp;your&nbsp;amazing&nbsp;college&nbsp;life.
+                                &nbsp;With&nbsp;many&nbsp;more&nbsp;features&nbsp;to&nbsp;come,&nbsp;so&nbsp;stay&nbsp;tune.
+                                </p>
                             </div>
                         </div>
-                        <div class="online-list">
-                            <div class="image">
-                                <img src="images/profile.jpg">
-                                <p>Samona&nbsp;Rose</p>
-                            </div>
-                        </div>
-                        <div class="online-list">
-                            <div class="image">
-                                <img src="images/profile.jpg">
-                                <p>Sam&nbsp;toka</p>
-                            </div>
+                        
                         </div>
 
 
@@ -178,15 +172,15 @@
 
         <div id="navbar">
                     <div class="button button1">
-                    
-                    <button id="button1" onclick="click(event,'home')">Home</button>
+                    <h1>STATIC</h1>
+                    <!-- <button id="button1" onclick="click(event,'home')">Home</button>
                     <button id="button2" onclick="click(event,'Club')">Clubs</button>
                     <button id="button3" onclick="click(event,'Placement')">Placement</button>
                     
                     </div>
                     <div class="search-box">
                         <img src="images/search.png" >
-                        <input type="text" placeholder="Search">
+                        <input type="text" placeholder="Search"> -->
                     </div>
                     <div class="button2 image " onclick="settingsMenuToggle()">
                         <img src="images/profile.jpg" >
@@ -199,12 +193,12 @@
                                 <img src="images/profile.jpg">
                                 <div>
                                     <p><?php echo $_SESSION['user_name']; ?></p>
-                                    <a href="#">See your profile</a>
+                                    <a href="testprofile.php">See your profile</a>
                                 </div>
                             </div> 
                            
                             <hr>
-                            <div class="user-profile">
+                            <!-- <div class="user-profile">
                                 <img src="images/feedback.png">
                                 <div>
                                     <p>Give Feedback</p>
@@ -223,7 +217,7 @@
                             <div class="setting-links">
                                 <img src="images/display.png" class="settings-icon">
                                 <a href="#">Display & Accesibility<img src="images/arrow.png" width="10px">  </a>  
-                            </div>
+                            </div> -->
                             <div class="setting-links">
                                 <img src="images/logout.png" class="settings-icon">
                                 <a href="logout.php">Logout<img src="images/arrow.png" width="10px">  </a>
@@ -244,9 +238,10 @@
 //posting starts here
    if($_SERVER['REQUEST_METHOD']== "POST")
    {
+      
       $post = new Post();
       $id = $_SESSION['user_name'];
-      $result = $post->create_post($id,$_POST);
+      $result = $post->create_post($id,$_POST,$_FILES);
       
       if($result == "")
       {

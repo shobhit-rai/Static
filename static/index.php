@@ -11,8 +11,8 @@
     <body>
         <div class="header">
             <p>
-                WELCOME TO STATIC
-            </p>
+                 STATIC
+</p>
         </div>
         <div id="login">
             <h1>Login</h1>
